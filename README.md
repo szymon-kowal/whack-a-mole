@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# [Live Preview](https://meek-pasca-6ebfca.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Whack-a-mole
 
-## Expanding the ESLint configuration
+It is definitely site where maybe you can`t whack a mole, but you can click on green rectangle.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React: For building the user interface.
+- TypeScript: For adding type safety to the JavaScript code.
+- HTML & CSS: For structuring and styling the web pages.
+- Vite: For bundling and optimizing the application.
+- TailwindCSS: For designing a responsive and modern UI with utility-first CSS.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Running the Application Locally
+
+Fork the repository, then clone it to your local machine. Navigate to the project directory and run the following commands:
+
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+2. **Run the Development Server**:
+   ```bash
+   npm run dev
+   ```
+3. **Build the Application**:
+   ```bash
+   npm run build
+   ```
+
+## Testing
+
+This project is tested with:
+
+- **Vitest**: For running unit and integration tests.
+- **@testing-library/react**: For testing React components in a realistic environment.
+
+
+To run the tests, use the command:
+
+```bash
+npm test
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Learning Objectives
+
+- **TailwindCSS**: How I can speed-up development of sites by using Tailwind.
+- **Testing**: I couldn`t resolve how I can mock Math.random function, so I needed to input my random function as input prop to App component, then I could mock it in my test.
